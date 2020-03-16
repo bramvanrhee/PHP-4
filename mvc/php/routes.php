@@ -1,6 +1,6 @@
 <?php
   define("DEFAULT_ROUTE", "home");
-  
+
   $routes = array(
     "home" => array(
       "view" => "HomeView",
@@ -8,7 +8,7 @@
     ),
     "form" => array(
       "view" => "FormView",
-      "Controller" => "FormController",
+      "controller" => "FormController",
     ),
     "test" => array(
       "view" => "TestView",
