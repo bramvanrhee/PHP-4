@@ -8,9 +8,8 @@
    </head>
    <body style="">
      <?php
-        if (isset($_GET['route'])) {
-          echo $_GET['route'];
-        }
+        $app = new \mvc\App();
+        echo $app;
       ?>
    </body>
  </html>
