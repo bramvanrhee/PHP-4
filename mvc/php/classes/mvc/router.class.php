@@ -17,6 +17,7 @@
       $route = isset($routes[$this->getRoute()]) ? $this->getRoute() : DEFAULT_ROUTE;
       $controller = "\\controllers\\" . $routes[$route]['controller'];
       $view = "\\views\\" . $routes[$route]['view'];
+      $model = "\\models\\" . $routes[$route]['model'];
       $this->controller = new $controller(null);
       $this->view = new $view($this->controller, null);
     }
