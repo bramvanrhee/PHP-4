@@ -11,3 +11,21 @@ body{
   background-position: bottom;
   height: 175px;
 }
+
+nav {
+  border-top: 3px solid #111;
+  border-bottom: 3px solid #111;
+}
+
+form {
+  background-color: #fff;
+  border: 1px solid #111;
+}
+form a {
+  color: #fff !important;
+}
+
+.form-control:focus, .form-control:hover {
+  box-shadow: unset;
+  border: 1px solid #111;
+}
