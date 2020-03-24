@@ -10,6 +10,10 @@
       "view" => "FormView",
       "controller" => "FormController",
     ),
+    "formSubmission" => array(
+      "view" => "FormSubView",
+      "controller" => "FormSubController",
+    ),
     "test" => array(
       "view" => "TestView",
       "controller" => "TestController",
