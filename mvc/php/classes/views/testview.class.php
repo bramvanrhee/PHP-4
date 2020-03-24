@@ -7,6 +7,7 @@
       $output .= "</h1>" . $klik++ . "</h1>";
       $output .= "<a href=\"test?klik=$klik\">klik</a>";
       $output .= "<br>";
+      
       return $output;
     }
   }
