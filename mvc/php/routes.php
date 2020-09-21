@@ -5,6 +5,7 @@
     "home" => array(
       "view" => "HomeView",
       "controller" => "HomeController",
+      "model" => "HomeModel",
     ),
     "form" => array(
       "view" => "FormView",
@@ -17,6 +18,19 @@
     "test" => array(
       "view" => "TestView",
       "controller" => "TestController",
+      "model" => "TestModel",
+    ),
+    "corona" => array(
+      "view" => "CoronaView",
+      "controller" => "CoronaController",
+      "model" => "CoronaModel",
+    ),
+    "red" => array(
+      "view" => "RedView",
+      "controller" => "RedController",
+    ),
+    "blue" => array(
+      "controller" => "BlueController",
     ),
   );
 ?>

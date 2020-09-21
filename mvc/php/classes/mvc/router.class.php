@@ -15,11 +15,14 @@
       }
 
       $route = isset($routes[$this->getRoute()]) ? $this->getRoute() : DEFAULT_ROUTE;
-      $controller = "\\controllers\\" . $routes[$route]['controller'];
-      $view = "\\views\\" . $routes[$route]['view'];
-      $model = "\\models\\" . $routes[$route]['model'];
-      $this->controller = new $controller(null);
-      $this->view = new $view($this->controller, null);
+      $model = isset($routes[$route]['model']) ? "\\models\\" . $routes[$route]['model'] : null;
+      $controller = isset($routes[$route]['controller']) ? "\\controllers\\" . $routes[$route]['controller'] : null;
+      $view = isset($routes[$route]['view']) ? "\\views\\" . $routes[$route]['view'] : null;
+      if ($model) {
+        $this->model = new $model;
+      }
+      $this->controller = new $controller($this->model);
+      $this->view = new $view($this->controller, $this->model);
     }
 
     private function getRoute() {
